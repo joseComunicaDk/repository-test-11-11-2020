@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            td {
+                    border:1px solid black;
+                    border-collapse:collapse;
+                    position: center;
+                }
+        </style>
+    </head>
+    <body>
+        <!--4. Meter un hola mundo dentro de una estructura html. -->
+        <?php
+            echo "Hola mundo"
+            ?>
+    </p>
+            <!-- 5. Cógete cualquier imagen y pon un img con la ruta de la imagen con PHP. -->
+                <?php 
+                    $ruta = "dog.jfif"
+                ?>
+                <img src="<?php echo $ruta; ?>" width="100px">
+</p>
+                <!-- 6. Create un select en HTML y metele los números del 1 al 10 como opciones. -->
+        <select name="numeros">
+            <?php
+            for( $numero = 0; $numero <= 10; $numero++){ ?>
+                <option value="<?php  echo $numero; ?>"><?php echo $numero; ?></option><?php
+            }
+            ?>
+        
+        </select>
+    </p>
+            <!--7. Hacer la tabla de multiplicar de todos los números del 1 al 10. -->
+          <?php
+            for($x=0; $x <=10; $x++){
+                echo"<div>";
+                    
+                    for($y =0; $y <= 9; $y++){
+                        echo "$x X $y = ";
+                        echo $x * $y;
+                        echo "</br>";
+                    }
+                echo"</div>";
+            }
+?>
+
+
+
+<!--    for( $x; $y <=10 ; y++){
+        echo "$x X $y = ";
+        echo $x * $y; */
+-->
+    </body>
+    </html>
